@@ -64,6 +64,11 @@ main{
     transform: translate(-50%, -50%);
 }
 
+section h2.ms_title{
+    position: relative;
+    top: 20px;
+}
+
 
 
 footer{
