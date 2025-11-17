@@ -69,6 +69,23 @@ section h2.ms_title{
     top: 20px;
 }
 
+#about .ms_societyCard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#about .card img {
+    max-width: 100%;
+    height: 140px;
+    object-fit: cover;
+    object-position: top left;
+}
+
+#about .card img.ms_imageCenter{
+    object-position: center;
+}
+
 
 
 footer{
