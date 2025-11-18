@@ -95,6 +95,16 @@ section h2.ms_title{
     }
 }
 
+#pianoSostenibilita .card img.img-fluid{
+    height: 200px;
+    object-fit: contain;
+}
+
+section#downloadReport{
+    height: 100vh;
+    background-color: #eff2f7;
+}
+
 
 
 footer{
