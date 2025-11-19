@@ -66,6 +66,8 @@ header li a.nav-link:hover{
 section h2.ms_title{
     position: relative;
     top: 20px;
+    font-style: italic;
+    color: #0f2754;
 }
 
 #about.ms_groupList{
@@ -95,9 +97,37 @@ section h2.ms_title{
     }
 }
 
+#pianoSostenibilita .card{
+    max-width: 540px;
+    height: 90%;
+    justify-content: center;
+}
+
 #pianoSostenibilita .card img.img-fluid{
     height: 200px;
     object-fit: contain;
+}
+
+#pianoSostenibilita .ms_activity{
+    background-color: #8bc8db;
+    border: 1px solid #2596be;
+    padding: 5px 20px;
+    margin-bottom: 10px;
+}
+
+#pianoSostenibilita .ms_activity p{
+    margin: 0;
+}
+
+#pianoSostenibilita .ms_activity p.ms_text-size{
+    font-size: 15px;
+}
+
+@media (max-width: 768px) {
+    #pianoSostenibilita .card img.img-fluid{
+        position: relative;
+        top: 15px;
+    }
 }
 
 section#downloadReport{
