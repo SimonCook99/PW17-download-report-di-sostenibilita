@@ -21,7 +21,7 @@ header nav ul li{
 }
 
 header nav img{
-    width: 20%;
+    /* width: 20%; */
     height: 50px;
 }
 
@@ -45,7 +45,7 @@ header li a.nav-link:hover{
 #jumbotron{
     background-image: url('./images/background.jpg');
     background-size: cover;
-    height: 70vh;
+    height: 90vh;
     padding: 50px 0;
     text-align: center;
     position: relative;
@@ -156,6 +156,10 @@ section#downloadReport{
     background-color: #e8ecfc;
     border-radius: 15px;
     padding: 10px 20px;
+}
+
+#downloadReport p.ms_text{
+    height: 35px;
 }
 
 
