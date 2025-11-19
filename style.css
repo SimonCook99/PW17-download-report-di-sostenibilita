@@ -63,6 +63,21 @@ header li a.nav-link:hover{
     transform: translate(-50%, -50%);
 }
 
+#jumbotron a.ms_button{
+    display: inline-block;
+    color: white;
+    padding: 20px 30px;
+    margin-top: 30px;
+    background-color: #00265a;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#jumbotron a.ms_button:hover{
+    background-color: #0069d9;
+    transition: all 0.3s;
+}
+
 section h2.ms_title{
     position: relative;
     top: 20px;
@@ -133,6 +148,14 @@ section h2.ms_title{
 section#downloadReport{
     height: 100vh;
     background-color: #eff2f7;
+}
+
+#downloadReport i.ms_mainIcon{
+    font-size: 80px;
+    color: #00265a;
+    background-color: #e8ecfc;
+    border-radius: 15px;
+    padding: 10px 20px;
 }
 
 
