@@ -38,9 +38,10 @@ header li a.nav-link:hover{
     text-decoration: underline;
 }
 
-/* main{
-    
-} */
+/*Nascondo gli elementi invisibili 'pre-animazione' per evitare la barra orizzontale del browser*/
+main{
+    overflow: hidden;
+}
 
 #jumbotron{
     background-image: url('./images/background.jpg');
@@ -171,3 +172,87 @@ footer{
     text-align: center;
     width: 100%;
 }
+
+
+
+
+/*INIZIO SEZIONE ANIMAZIONI*/
+
+#jumbotron .ms_animation{
+    transform: translateY(100px);
+    filter: blur(10px);
+    opacity: 0;
+    transition: all 1s;
+}
+
+#jumbotron .ms_animation.ms_animating{
+    transform: translateY(0px);
+    filter: blur(0px);
+    opacity: 1;
+}
+
+#about h2.ms_animation{
+    transform: translateY(30px);
+    filter: blur(10px);
+    opacity: 0;
+    transition: all 1s;
+}
+
+#about h2.ms_animation.ms_animating{
+    transform: translateY(0px);
+    filter: blur(0px);
+    opacity: 1;
+}
+
+/*DA AGGIUNGERE LE ANIMAZIONI PER LA SEZIONE 'Il gruppo' */
+
+
+#pianoSostenibilita h2.ms_animation{
+    transform: translateY(30px);
+    filter: blur(10px);
+    opacity: 0;
+    transition: all 1s;
+}
+
+#pianoSostenibilita h2.ms_animation.ms_animating{
+    transform: translateY(0px);
+    filter: blur(0px);
+    opacity: 1;
+}
+
+#pianoSostenibilita div.ms_animation:nth-child(odd){
+    transform: translateX(-100%);
+    filter: blur(10px);
+    opacity: 0;
+    transition: all 1s;
+}
+#pianoSostenibilita div.ms_animation.ms_animating:nth-child(odd){
+    transform: translateX(0%);
+    filter: blur(0px);
+    opacity: 1;
+}
+#pianoSostenibilita div.ms_animation:nth-child(even){
+    transform: translateX(100%);
+    filter: blur(10px);
+    opacity: 0;
+    transition: all 1s;
+}
+#pianoSostenibilita div.ms_animation.ms_animating:nth-child(even){
+    transform: translateX(0%);
+    filter: blur(0px);
+    opacity: 1;
+}
+
+#downloadReport div.ms_animation{
+    transform: translateY(100px);
+    filter: blur(10px);
+    opacity: 0;
+    transition: all 1s;
+}
+#downloadReport div.ms_animation.ms_animating{
+    transform: translateY(0px);
+    filter: blur(0px);
+    opacity: 1;
+}
+
+/*FINE SEZIONE ANIMAZIONI*/
