@@ -21,7 +21,6 @@ header nav ul li{
 }
 
 header nav img{
-    /* width: 20%; */
     height: 50px;
 }
 
@@ -90,6 +89,19 @@ section h2.ms_title{
     background-color: #eff2f7;
 }
 
+#about .ms_groupContext{
+    width: 100%;
+    margin: auto;
+    background-color: white;
+    padding-bottom: 30px;
+}
+
+#about h4.ms_title{
+    padding: 10px;
+    font-style: italic;
+    color: #0f2754;
+}
+
 #about .ms_societyCard{
     display: flex;
     justify-content: center;
@@ -147,7 +159,6 @@ section h2.ms_title{
 }
 
 section#downloadReport{
-    height: 100vh;
     background-color: #eff2f7;
 }
 
@@ -204,7 +215,58 @@ footer{
     opacity: 1;
 }
 
-/*DA AGGIUNGERE LE ANIMAZIONI PER LA SEZIONE 'Il gruppo' */
+#about h4.ms_animation{
+    transform: translateY(30px);
+    filter: blur(10px);
+    opacity: 0;
+    transition: all 1s;
+}
+
+#about h4.ms_animation.ms_animating{
+    transform: translateY(0px);
+    filter: blur(0px);
+    opacity: 1;
+}
+
+
+#about .ms_groupPresentation div.ms_animation:first-child{
+    transform: translateX(-100%);
+    filter: blur(10px);
+    opacity: 0;
+    transition: all 1s;
+}
+
+#about .ms_groupPresentation div.ms_animation.ms_animating:first-child{
+    transform: translateX(0%);
+    filter: blur(0px);
+    opacity: 1;
+}
+
+#about .ms_groupPresentation div.ms_animation:nth-child(2){
+    transform: translateX(100%);
+    filter: blur(10px);
+    opacity: 0;
+    transition: all 1s;
+}
+
+#about .ms_groupPresentation div.ms_animation.ms_animating:nth-child(2){
+    transform: translateX(0%);
+    filter: blur(0px);
+    opacity: 1;
+}
+
+#about div.ms_animation{
+    transform: translateY(80px);
+    filter: blur(10px);
+    opacity: 0;
+    transition: all 1s;
+}
+
+#about div.ms_animation.ms_animating{
+    transform: translateY(0px);
+    filter: blur(0px);
+    opacity: 1;
+}
 
 
 #pianoSostenibilita h2.ms_animation{
