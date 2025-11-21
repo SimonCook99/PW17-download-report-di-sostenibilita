@@ -179,9 +179,27 @@ section#downloadReport{
 footer{
     background-color: #00265a;
     color: white;
-    padding: 10px 0;
+    padding: 20px 0;
     text-align: center;
     width: 100%;
+}
+
+footer p{
+    color: #CACBD5;
+    margin: 5px;
+    font-size: 13px;
+}
+
+footer a{
+    font-size: 30px;
+    padding: 5px;
+    color: #CACBD5;
+    text-decoration: none;
+}
+
+footer i:hover{
+    color: white;
+    transition: all 0.5s;
 }
 
 
