@@ -154,7 +154,7 @@ section h2.ms_title{
 @media (max-width: 768px) {
     #pianoSostenibilita .card img.img-fluid{
         position: relative;
-        top: 15px;
+        top: 25px;
     }
 }
 
