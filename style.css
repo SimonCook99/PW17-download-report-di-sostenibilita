@@ -96,6 +96,10 @@ section h2.ms_title{
     padding-bottom: 30px;
 }
 
+#about .ms_groupContext b{
+    color: #0f2754;
+}
+
 #about h4.ms_title{
     padding: 10px;
     font-style: italic;
