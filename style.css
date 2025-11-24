@@ -17,7 +17,6 @@ header nav button.navbar-toggler{
 
 header nav ul li{
     margin: 0 20px;
-    /*color: white;*/
 }
 
 header nav img{
@@ -28,9 +27,6 @@ header li a.nav-link, header li a.nav-link.active{
     color: white!important;
     text-decoration: none;
 }
-/* header li a.nav-link.active{
-    
-} */
 
 header li a.nav-link:hover{
     color: #a6c6e5!important;
@@ -116,7 +112,6 @@ section h2.ms_title{
     max-width: 100%;
     height: 140px;
     object-fit: contain;
-    /* object-position: top left; */
 }
 
 #about .card img.ms_imageCenter{
@@ -179,7 +174,6 @@ section#downloadReport{
 }
 
 
-
 footer{
     background-color: #00265a;
     color: white;
@@ -208,9 +202,11 @@ footer i:hover{
 
 
 
-
 /*INIZIO SEZIONE ANIMAZIONI*/
 
+/*Le classi partono inizialmente con la sola classe ms_animation, 
+ che rende gli elementi selezionati invisibili e spostati sull'asse X o Y
+*/
 #jumbotron .ms_animation{
     transform: translateY(100px);
     filter: blur(10px);
@@ -218,6 +214,9 @@ footer i:hover{
     transition: all 1s;
 }
 
+/*Quando l'elemento entra nel viewport, viene aggiunta da javascript la classe ms_animating,
+ che resetta le proprietà al loro valore originale, con transizione di 1 secondo
+*/
 #jumbotron .ms_animation.ms_animating{
     transform: translateY(0px);
     filter: blur(0px);
@@ -249,7 +248,6 @@ footer i:hover{
     filter: blur(0px);
     opacity: 1;
 }
-
 
 #about .ms_groupPresentation div.ms_animation:first-child{
     transform: translateX(-100%);
@@ -304,6 +302,7 @@ footer i:hover{
     opacity: 1;
 }
 
+/*Transizione da sinistra a destra per i div figli 'dispari' */
 #pianoSostenibilita div.ms_animation:nth-child(odd){
     transform: translateX(-100%);
     filter: blur(10px);
@@ -315,6 +314,8 @@ footer i:hover{
     filter: blur(0px);
     opacity: 1;
 }
+
+/*Transizione da destra a sinistra per i div figli 'pari' */
 #pianoSostenibilita div.ms_animation:nth-child(even){
     transform: translateX(100%);
     filter: blur(10px);
