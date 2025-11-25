@@ -1,3 +1,4 @@
+/*Reset proprietà iniziale*/
 *{
     margin: 0;
     padding: 0;
@@ -45,11 +46,6 @@ main{
     padding: 50px 0;
     text-align: center;
     position: relative;
-}
-
-#jumbotron div.blur{
-    max-width: 100%;
-    filter: brightness(70%);
 }
 
 #jumbotron div.row{
@@ -118,6 +114,7 @@ section h2.ms_title{
     object-position: center;
 }
 
+/*Media query per impostare un'altezza standard alle card quando viene mostrato il testo*/
 @media (min-width: 768px) {
     #about .card{
         height: 400px;
@@ -150,6 +147,7 @@ section h2.ms_title{
     font-size: 15px;
 }
 
+/*Media query che modifica leggermente la posizione delle immagini da smartphone*/
 @media (max-width: 768px) {
     #pianoSostenibilita .card img.img-fluid{
         position: relative;
@@ -214,7 +212,7 @@ footer i:hover{
     transition: all 1s;
 }
 
-/*Quando l'elemento entra nel viewport, viene aggiunta da javascript la classe ms_animating,
+/*Quando l'elemento entra nella viewport, viene aggiunta da javascript la classe ms_animating,
  che resetta le proprietà al loro valore originale, con transizione di 1 secondo
 */
 #jumbotron .ms_animation.ms_animating{
