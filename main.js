@@ -13,8 +13,6 @@ function scrollAnimation(){
 
     //altezza della finestra
     let innerHeight = window.innerHeight;
-    console.log("Top:" + sections[2].getBoundingClientRect().top);
-    console.log("innerHeight:" + innerHeight);
     
 
     sections.forEach(section => {
