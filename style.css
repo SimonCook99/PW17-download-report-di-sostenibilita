@@ -114,8 +114,14 @@ section h2.ms_title{
     object-position: center;
 }
 
-/*Media query per impostare un'altezza standard alle card quando viene mostrato il testo*/
+/*Media queries per impostare un'altezza standard alle card quando viene mostrato il testo (md: >= 768px; lg: >= 992px;)*/
 @media (min-width: 768px) {
+    #about .card{
+        height: 470px;
+    }
+}
+
+@media (min-width: 992px) {
     #about .card{
         height: 400px;
     }
